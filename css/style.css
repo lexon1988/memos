@@ -45,24 +45,27 @@ table {
 }
 
 
+.text{
+	border-bottom:1px solid #e5e5e5;
+	padding:10px;
+	background-color: white;
+	color:black;
+}
 
 
 .grid-item {
-    
-    border:1px solid white;
-    padding:10px;
-    background-color: white;
-	border-radius:4px;
+	border-radius:5px 5px 0px 0px;
 	margin-bottom:10px;
 	width:290px;
-	font-family:sans-serif;
+	color:#474747;
+	font-family: 'Opem Sanc';
+	background-color:white;
 	font-size:12pt;
 	
 }
 
 .grid-item:hover {
-  border:1px solid #F7F7F7;		
-  background-color: #F7F7F7;
+
 }
 
 
@@ -72,6 +75,7 @@ table {
 	margin-top:35px;
 	//overflow: hidden;
 	background: #e5e5e5;
+	display:none;
 }
 
 
@@ -98,6 +102,15 @@ table {
 }
 
 
+.rating{
+	
+
+	background-color: white;
+	font-size:12px;
+	padding-left:14px;
+	padding:10px;
+	
+}
 
 
 .search {
@@ -226,4 +239,18 @@ input[type="search"] {
 	padding:20px;
 	background-color: 
 	
+}
+
+
+.img_main{
+	
+	width:290px;
+	border-radius:5px 5px 0px 0px;
+	margin-top:-3px;
+	margin:0 auto;
+}
+
+.img_main:hover {
+	
+	cursor: zoom-in;
 }

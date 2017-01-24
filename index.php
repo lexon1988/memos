@@ -5,16 +5,19 @@
     <meta charset="utf-8" />
     <title>Memario.com</title>
   
-	<script src="js/jquery.min.js" data-semver="2.2.0" data-require="jquery@*"></script>
-
-
-	<script data-require="masonry@*" data-semver="2.1.0-7" src="js/masonry.js"></script>
-    <script src="js/jquery.infinitescroll.min.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Arsenal|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+  
+	<script src="js/jquery.min.js"></script>
+	<script  src="js/masonry.js"></script>
+	<script src="js/jquery.infinitescroll.min.js"></script>
+	<script type="text/javascript" src="js/toggleNavBar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
     
 
 	
 
-	<link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -76,129 +79,194 @@
 	
 		
 
-	
-      <div class="grid-item grid-item-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dignissim orci. Cras pellentesque eros eu lectus pulvinar, at tincidunt lorem malesuada. Suspendisse pulvinar auctor pretium. Nunc ornare mollis augue ac convallis.</p>
-      </div>
+
+	  
+	  
+	  
+	  
+	  	
       <div class="grid-item">
-        <p>Aenean orci purus, congue sed consequat interdum, dignissim sed dolor. Donec sed velit dolor. Ut accumsan, orci sed suscipit dignissim, erat massa pulvinar ex, vitae malesuada quam augue vel metus.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c604831/v604831541/26495/b5VCRXw9eUU.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322  </small>&nbsp;&nbsp;&nbsp;
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43  </small>
+							<div style='float:right;'><small><b>Сегодня</b></small></div>
+		
+		</div>
+			
       </div>
+	  
+
       <div class="grid-item">
-        <p>Etiam tempor vestibulum turpis, eget ullamcorper eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vel augue ac felis imperdiet convallis. Nam at libero vitae odio vehicula facilisis.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c604831/v604831541/2649c/XbjXaLt7Y5c.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
+
+
       <div class="grid-item">
-        <p>Donec nec velit ut enim dictum varius. Sed imperdiet, sem nec ultricies cursus, est ipsum semper nibh, a varius diam erat vitae turpis.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c604831/v604831541/26495/b5VCRXw9eUU.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
+
+
       <div class="grid-item">
-        <p>In quis lacinia magna. Proin eget dolor vestibulum, tincidunt neque vitae, rhoncus magna. Quisque suscipit venenatis urna at ornare. Integer mattis mi dui, a consectetur lectus iaculis at.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c543103/v543103541/29cc2/yMceGsNPoGw.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
-      <div class="grid-item grid-item-3">
-        <p>Donec vestibulum sapien tortor, eleifend viverra nulla feugiat at. Nullam facilisis est nec libero tincidunt volutpat. Integer quis elit rhoncus, fringilla quam vel, venenatis arcu. In hac habitasse platea dictumst. Nunc sed maximus nisi. Sed lacinia feugiat lorem non convallis. Sed vitae lectus at nunc elementum sagittis.</p>
-      </div>
+
+
       <div class="grid-item">
-        <p>Vivamus ante elit, posuere eget ipsum eu, convallis semper urna. Nullam sit amet ultrices quam. Duis in dictum risus, maximus vehicula neque.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c636429/v636429750/5810a/VZeBCmVfZiA.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
-      <div class="grid-item grid-item-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dignissim orci. Cras pellentesque eros eu lectus pulvinar, at tincidunt lorem malesuada. Suspendisse pulvinar auctor pretium. Nunc ornare mollis augue ac convallis.</p>
-      </div>
+
+
+
       <div class="grid-item">
-        <p>Aenean orci purus, congue sed consequat interdum, dignissim sed dolor. Donec sed velit dolor. Ut accumsan, orci sed suscipit dignissim, erat massa pulvinar ex, vitae malesuada quam augue vel metus.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c604831/v604831541/263eb/pKPWPYZfdYc.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
+
+
+
       <div class="grid-item">
-        <p>Etiam tempor vestibulum turpis, eget ullamcorper eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vel augue ac felis imperdiet convallis. Nam at libero vitae odio vehicula facilisis.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c604831/v604831541/2639d/RAsuYMb4NS8.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
+
+
+
       <div class="grid-item">
-        <p>Donec nec velit ut enim dictum varius. Sed imperdiet, sem nec ultricies cursus, est ipsum semper nibh, a varius diam erat vitae turpis.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c639225/v639225781/45f1/D_lT-CxW5Qk.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
+
+
+
       <div class="grid-item">
-        <p>In quis lacinia magna. Proin eget dolor vestibulum, tincidunt neque vitae, rhoncus magna. Quisque suscipit venenatis urna at ornare. Integer mattis mi dui, a consectetur lectus iaculis at.</p>
+		
+		<img class='img_main' src='http://pp.vk.me/c638023/v638023188/1e5b5/dALA4p5bWdM.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
-      <div class="grid-item grid-item-3">
-        <p>Donec vestibulum sapien tortor, eleifend viverra nulla feugiat at. Nullam facilisis est nec libero tincidunt volutpat. Integer quis elit rhoncus, fringilla quam vel, venenatis arcu. In hac habitasse platea dictumst. Nunc sed maximus nisi. Sed lacinia feugiat lorem non convallis. Sed vitae lectus at nunc elementum sagittis.</p>
-      </div>
+
+
+
+
       <div class="grid-item">
-        <p>Vivamus ante elit, posuere eget ipsum eu, convallis semper urna. Nullam sit amet ultrices quam. Duis in dictum risus, maximus vehicula neque.</p>
+		
+		<img class='img_main' src='https://pp.vk.me/c639225/v639225781/4596/Fp8516bPW6o.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322 | </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43 | </small>
+							<span class='glyphicon glyphicon-calendar span1'></span><small> 01.2.2016</small>
+		</div>
+			
       </div>
-      <div class="grid-item grid-item-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dignissim orci. Cras pellentesque eros eu lectus pulvinar, at tincidunt lorem malesuada. Suspendisse pulvinar auctor pretium. Nunc ornare mollis augue ac convallis.</p>
-      </div>
+
+
+
       <div class="grid-item">
-        <p>Aenean orci purus, congue sed consequat interdum, dignissim sed dolor. Donec sed velit dolor. Ut accumsan, orci sed suscipit dignissim, erat massa pulvinar ex, vitae malesuada quam augue vel metus.</p>
-      </div>
-      <div class="grid-item">
-        <p>Etiam tempor vestibulum turpis, eget ullamcorper eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vel augue ac felis imperdiet convallis. Nam at libero vitae odio vehicula facilisis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Donec nec velit ut enim dictum varius. Sed imperdiet, sem nec ultricies cursus, est ipsum semper nibh, a varius diam erat vitae turpis.</p>
-      </div>
-      <div class="grid-item">
-        <p>In quis lacinia magna. Proin eget dolor vestibulum, tincidunt neque vitae, rhoncus magna. Quisque suscipit venenatis urna at ornare. Integer mattis mi dui, a consectetur lectus iaculis at.</p>
-      </div>
-      <div class="grid-item grid-item-2">
-        <p>Donec vestibulum sapien tortor, eleifend viverra nulla feugiat at. Nullam facilisis est nec libero tincidunt volutpat. Integer quis elit rhoncus, fringilla quam vel, venenatis arcu. In hac habitasse platea dictumst. Nunc sed maximus nisi. Sed lacinia feugiat lorem non convallis. Sed vitae lectus at nunc elementum sagittis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Vivamus ante elit, posuere eget ipsum eu, convallis semper urna. Nullam sit amet ultrices quam. Duis in dictum risus, maximus vehicula neque.</p>
-      </div>
-      <div class="grid-item grid-item-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dignissim orci. Cras pellentesque eros eu lectus pulvinar, at tincidunt lorem malesuada. Suspendisse pulvinar auctor pretium. Nunc ornare mollis augue ac convallis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Aenean orci purus, congue sed consequat interdum, dignissim sed dolor. Donec sed velit dolor. Ut accumsan, orci sed suscipit dignissim, erat massa pulvinar ex, vitae malesuada quam augue vel metus.</p>
-      </div>
-      <div class="grid-item">
-        <p>Etiam tempor vestibulum turpis, eget ullamcorper eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vel augue ac felis imperdiet convallis. Nam at libero vitae odio vehicula facilisis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Donec nec velit ut enim dictum varius. Sed imperdiet, sem nec ultricies cursus, est ipsum semper nibh, a varius diam erat vitae turpis.</p>
-      </div>
-      <div class="grid-item">
-        <p>In quis lacinia magna. Proin eget dolor vestibulum, tincidunt neque vitae, rhoncus magna. Quisque suscipit venenatis urna at ornare. Integer mattis mi dui, a consectetur lectus iaculis at.</p>
-      </div>
-      <div class="grid-item grid-item-2">
-        <p>Donec vestibulum sapien tortor, eleifend viverra nulla feugiat at. Nullam facilisis est nec libero tincidunt volutpat. Integer quis elit rhoncus, fringilla quam vel, venenatis arcu. In hac habitasse platea dictumst. Nunc sed maximus nisi. Sed lacinia feugiat lorem non convallis. Sed vitae lectus at nunc elementum sagittis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Vivamus ante elit, posuere eget ipsum eu, convallis semper urna. Nullam sit amet ultrices quam. Duis in dictum risus, maximus vehicula neque.</p>
-      </div>
-      <div class="grid-item grid-item-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dignissim orci. Cras pellentesque eros eu lectus pulvinar, at tincidunt lorem malesuada. Suspendisse pulvinar auctor pretium. Nunc ornare mollis augue ac convallis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Aenean orci purus, congue sed consequat interdum, dignissim sed dolor. Donec sed velit dolor. Ut accumsan, orci sed suscipit dignissim, erat massa pulvinar ex, vitae malesuada quam augue vel metus.</p>
-      </div>
-      <div class="grid-item">
-        <p>Etiam tempor vestibulum turpis, eget ullamcorper eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vel augue ac felis imperdiet convallis. Nam at libero vitae odio vehicula facilisis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Donec nec velit ut enim dictum varius. Sed imperdiet, sem nec ultricies cursus, est ipsum semper nibh, a varius diam erat vitae turpis.</p>
-      </div>
-      <div class="grid-item">
-        <p>In quis lacinia magna. Proin eget dolor vestibulum, tincidunt neque vitae, rhoncus magna. Quisque suscipit venenatis urna at ornare. Integer mattis mi dui, a consectetur lectus iaculis at.</p>
-      </div>
-      <div class="grid-item grid-item-3">
-        <p>Donec vestibulum sapien tortor, eleifend viverra nulla feugiat at. Nullam facilisis est nec libero tincidunt volutpat. Integer quis elit rhoncus, fringilla quam vel, venenatis arcu. In hac habitasse platea dictumst. Nunc sed maximus nisi. Sed lacinia feugiat lorem non convallis. Sed vitae lectus at nunc elementum sagittis.</p>
-      </div>
-      <div class="grid-item">
-        <p>Vivamus ante elit, posuere eget ipsum eu, convallis semper urna. Nullam sit amet ultrices quam. Duis in dictum risus, maximus vehicula neque.</p>
-      </div>
-    </div>
+		
+		<img class='img_main' src='https://pp.vk.me/c639225/v639225781/4575/sfvorseR2y0.jpg'>
+		<p class='text'>Комментарий к посту, с текстом каким - то на русском, скорей всего.</p>
+		
+		<div class='rating'>
+							<span class='glyphicon glyphicon-heart span1'></span><small> 1322  </small>
+							<span class='glyphicon glyphicon-bullhorn span1'></span><small> 43  </small>
+							<span class='glyphicon glyphicon-calendar span1' style='float:right;'></span><small> 01.2.2016</small>
+							
+							 
+		</div>
+			
+      </div>	  
+	  
+	  
+	  
+	  
+	 
     <nav id="pagination">
       <p>
-        <a id='next_page' href="page.php?p=2">Page</a>
-      </p>
+	  
+	  
+        <a id='next_page' href="page.php?p=2"></a>
+     
+	  
+	  </p>
     </nav>
-    
-	
+   
 
 	
-	
-	
 
-	<script type="text/javascript" src="js/toggleNavBar.min.js"></script>
+
 	<script src="js/script.js"></script>
-	
-	
 
 	
   </body>
