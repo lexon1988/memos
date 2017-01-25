@@ -1,16 +1,23 @@
 
 var trig = 1;
 var grid = $('.grid');
+var turn=90;
+
+
+
+
 
 
 
 grid.imagesLoaded(function () {
+	
+
 $('.grid').show();
 
      grid.masonry({
         
 		itemSelector: '.grid-item',
-        columnWidth: 20,
+        columnWidth: 310,
 		isFitWidth: true
 
     });
@@ -47,7 +54,7 @@ $('.grid').show();
 		   grid.masonry('appended', elts);
         });
 		
-		});
+});
 
 
 
@@ -63,14 +70,17 @@ $('.grid').show();
     $("#menu").click(function() {
 
         trig = trig + 1;
-
+		
+		
         if (trig == 2) {
+				
+				
             $(".modal_shade").show();
             $(".modal").slideDown();
             $(".modal").show(600);
 
             $("#menu").rotate({
-                endDeg: -90,
+                endDeg: turn,
                 persist: true,
                 duration: 0.3,
             });
@@ -84,18 +94,20 @@ $('.grid').show();
             });
 
             $("body").css("overflow-y", "hidden");
-
+			
+			turn=turn+90;
 
         }
 
         if (trig == 3) {
-			trig = 1;
-	
+			
+			
+			
             $(".modal").slideUp();
-            $(".modal").hide(600);
+            $(".modal").hide(100);
 
             $("#menu").rotate({
-                endDeg: 180,
+                endDeg: turn,
                 persist: true,
                 duration: 0.3,
             });
@@ -103,7 +115,7 @@ $('.grid').show();
 
             $(".modal_shade").animate({
                 opacity: 0,
-            }, 700, function() {
+            }, 100, function() {
 
 
 
@@ -111,8 +123,8 @@ $('.grid').show();
                 $("body").css("overflow-y", "auto");
             });
 
-            
-
+            trig = 1;
+			turn=turn+90;
         }
 
 
@@ -125,13 +137,12 @@ $('.grid').show();
 
     $(".modal_shade").click(function() {
 
-		 trig = 1;
-
+	
+	
         $(".modal").slideUp();
-        $(".modal").hide(600);
-
+        $(".modal").hide(200);
         $("#menu").rotate({
-            endDeg: 180,
+            endDeg: turn,
             persist: true,
             duration: 0.3,
         });
@@ -139,7 +150,7 @@ $('.grid').show();
 
         $(".modal_shade").animate({
             opacity: 0,
-        }, 700, function() {
+        }, 300, function() {
 
 
 
@@ -148,25 +159,26 @@ $('.grid').show();
         });
 
 		
-
-
+		trig = 1;
+		turn=turn+90;
     });
 
 
 
 
     $(document).on('keyup', function(evt) {
-        if (evt.keyCode == 27) {
-
-
-
-            trig = trig + 1;
-
+        
+		if (evt.keyCode == 27) {
+		
+           trig = trig + 1;
+           		   
+		   
             var scroll = $(window).scrollTop() - 1;
             $(window).scrollTop(scroll);
 
+			
             if (trig == 2) {
-               
+
 				$(".modal_shade").animate({
                     opacity: 0.5,
                 }, 500);
@@ -179,27 +191,25 @@ $('.grid').show();
                 $(".modal").show(600);
 
                 $("#menu").rotate({
-                    endDeg: -90,
+                    endDeg: turn,
                     persist: true,
                     duration: 0.3,
                 });
 
-				
-
-               
-
+				turn=turn+90;
 
             }
-
-            if (trig == 3) {
+			
+			
+           
+		   if (trig == 3) {
+			   
 				
-				trig = 1;
-
                 $(".modal").slideUp();
-                $(".modal").hide(600);
+                $(".modal").hide(100);
 
                 $("#menu").rotate({
-                    endDeg: 180,
+                    endDeg: turn,
                     persist: true,
                     duration: 0.3,
                 });
@@ -207,25 +217,24 @@ $('.grid').show();
 
                 $(".modal_shade").animate({
                     opacity: 0,
-                }, 700, function() {
-
+                }, 200, function() {
 
                     $(".modal_shade").hide();
                     $("body").css("overflow-y", "auto");
-				
 
-			 });
+				});
 
-             
+					trig = 1;
+					turn=turn+90;
+				}
 
-            }
+			
+    
+	
+	
 
-		
-
-
-        }
-    });
-
+	}
+});
 
 
 
@@ -359,10 +368,6 @@ $.fn.rotate = function(options) {
 
     return $this;
 };
-
-
-
-
 
 
 

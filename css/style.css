@@ -56,7 +56,7 @@ table {
 .grid-item {
 	border-radius:5px 5px 0px 0px;
 	margin-bottom:10px;
-	width:290px;
+	width:300px;
 	color:#474747;
 	font-family: 'Opem Sanc';
 	background-color:white;
@@ -244,13 +244,13 @@ input[type="search"] {
 
 .img_main{
 	
-	width:290px;
+	width:300px;
 	border-radius:5px 5px 0px 0px;
 	margin-top:-3px;
 	margin:0 auto;
 }
 
 .img_main:hover {
-	
+	opacity: 0.95;
 	cursor: zoom-in;
 }
