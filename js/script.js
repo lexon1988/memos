@@ -1,259 +1,12 @@
 
+
+
 var trig = 1;
+var trig2 = 1;
 var grid = $('.grid');
 var turn=90;
 
 
-
-
-
-
-
-grid.imagesLoaded(function () {
-	
-
-$('.grid').show();
-
-     grid.masonry({
-        
-		itemSelector: '.grid-item',
-        columnWidth: 310,
-		isFitWidth: true
-
-    });
-
-  });
-
-	
-	grid.imagesLoaded(function () {
-    grid.infinitescroll({
-        
-
-		// Pagination element that will be hidden
-            navSelector: '#pagination',
-
-            // Next page link
-            nextSelector: '#next_page',
-
-            // Selector of items to retrieve
-            itemSelector: '.grid-item',
-
-            // Loading message
-            loadingText: 'Loading new items…'
-        },
-		
-		
-		
-        // Function called once the elements are retrieved
-        function(new_elts) {
-       
-		
-		var elts = $(new_elts).css('opacity', 1);
-
-
-		   grid.masonry('appended', elts);
-        });
-		
-});
-
-
-
-
-    $('#navbar').toggleNav({
-        slideEffect: true,
-        speed: 400
-    });
-
-
-	
-
-    $("#menu").click(function() {
-
-        trig = trig + 1;
-		
-		
-        if (trig == 2) {
-				
-				
-            $(".modal_shade").show();
-            $(".modal").slideDown();
-            $(".modal").show(600);
-
-            $("#menu").rotate({
-                endDeg: turn,
-                persist: true,
-                duration: 0.3,
-            });
-
-
-
-            $(".modal_shade").animate({
-                opacity: 0.5,
-            }, 500, function() {
-
-            });
-
-            $("body").css("overflow-y", "hidden");
-			
-			turn=turn+90;
-
-        }
-
-        if (trig == 3) {
-			
-			
-			
-            $(".modal").slideUp();
-            $(".modal").hide(100);
-
-            $("#menu").rotate({
-                endDeg: turn,
-                persist: true,
-                duration: 0.3,
-            });
-
-
-            $(".modal_shade").animate({
-                opacity: 0,
-            }, 100, function() {
-
-
-
-                $(".modal_shade").hide();
-                $("body").css("overflow-y", "auto");
-            });
-
-            trig = 1;
-			turn=turn+90;
-        }
-
-
-
-
-    });
-
-
-
-
-    $(".modal_shade").click(function() {
-
-	
-	
-        $(".modal").slideUp();
-        $(".modal").hide(200);
-        $("#menu").rotate({
-            endDeg: turn,
-            persist: true,
-            duration: 0.3,
-        });
-
-
-        $(".modal_shade").animate({
-            opacity: 0,
-        }, 300, function() {
-
-
-
-            $(".modal_shade").hide();
-            $("body").css("overflow-y", "auto");
-        });
-
-		
-		trig = 1;
-		turn=turn+90;
-    });
-
-
-
-
-    $(document).on('keyup', function(evt) {
-        
-		if (evt.keyCode == 27) {
-		
-           trig = trig + 1;
-           		   
-		   
-            var scroll = $(window).scrollTop() - 1;
-            $(window).scrollTop(scroll);
-
-			
-            if (trig == 2) {
-
-				$(".modal_shade").animate({
-                    opacity: 0.5,
-                }, 500);
-				
-				$(".modal_shade").show();
-				$("body").css("overflow-y", "hidden");
-			
-				
-                $(".modal").slideDown();
-                $(".modal").show(600);
-
-                $("#menu").rotate({
-                    endDeg: turn,
-                    persist: true,
-                    duration: 0.3,
-                });
-
-				turn=turn+90;
-
-            }
-			
-			
-           
-		   if (trig == 3) {
-			   
-				
-                $(".modal").slideUp();
-                $(".modal").hide(100);
-
-                $("#menu").rotate({
-                    endDeg: turn,
-                    persist: true,
-                    duration: 0.3,
-                });
-
-
-                $(".modal_shade").animate({
-                    opacity: 0,
-                }, 200, function() {
-
-                    $(".modal_shade").hide();
-                    $("body").css("overflow-y", "auto");
-
-				});
-
-					trig = 1;
-					turn=turn+90;
-				}
-
-			
-    
-	
-	
-
-	}
-});
-
-
-
-
-
-
-
-
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
 
 
 $.fn.rotate = function(options) {
@@ -368,6 +121,283 @@ $.fn.rotate = function(options) {
 
     return $this;
 };
+
+
+
+
+	
+	
+$('#navbar').toggleNav({
+        slideEffect: true,
+        speed: 400
+    });
+	
+	
+	
+	
+	
+	
+grid.imagesLoaded(function () {
+$('.grid').show();
+
+     grid.masonry({
+        
+		itemSelector: '.grid-item',
+        columnWidth: 310,
+		isFitWidth: true
+
+    });
+});
+
+
+
+   
+   grid.infinitescroll({
+     
+
+		// Pagination element that will be hidden
+            navSelector: '#pagination',
+
+            // Next page link
+            nextSelector: '#next_page',
+
+            // Selector of items to retrieve
+            itemSelector: '.grid-item',
+
+            // Loading message
+            loadingText: 'Loading new items…'
+        },
+		
+		
+		
+        // Function called once the elements are retrieved
+			function(new_elts) {
+			
+			grid.imagesLoaded(function () {
+			
+					var elts = $(new_elts).css('opacity', 1);
+					grid.masonry('appended', elts);
+				
+				});
+				
+			});
+	
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+    $("#menu").click(function() {
+
+        trig = trig + 1;
+		
+		
+        if (trig == 2) {
+				
+				
+            $(".modal_shade").show();
+            $(".modal").slideDown();
+            $(".modal").show(600);
+
+            $("#menu").rotate({
+                endDeg: turn,
+                persist: true,
+                duration: 0.3,
+            });
+
+
+			
+            $(".modal_shade").animate({
+                opacity: 0.5,
+            }, 500, function() {
+            });
+            $("body").css("overflow-y", "hidden");
+			
+			
+			
+			turn=turn+90;
+
+        }
+
+        if (trig == 3) {
+			
+			trig = 1;
+			
+            $(".modal").slideUp();
+            $(".modal").hide(100);
+
+            $("#menu").rotate({
+                endDeg: turn,
+                persist: true,
+                duration: 0.3,
+            });
+
+			if(trig2!=2){
+				
+				$(".modal_shade").animate({
+					opacity: 0,
+				}, 100, function() {
+					$(".modal_shade").hide();
+					$("body").css("overflow-y", "auto");
+				});
+			
+			}
+			
+			
+           
+			turn=turn+90;
+        }
+
+    });
+
+
+	
+
+$("#sett").click(function() {
+
+        trig2 = trig2 + 1;
+		
+		
+        if (trig2 == 2) {
+			
+			$("#sett").rotate({
+				endDeg: -360,
+				count: 1,
+				duration: 0.4
+			});
+			
+				
+            $(".modal_shade").show();
+            $(".modal2").slideDown();
+            $(".modal2").show(600);
+
+  
+            $(".modal_shade").animate({
+                opacity: 0.5,
+            }, 500, function() {
+
+            });
+
+            $("body").css("overflow-y", "hidden");
+			
+
+        }
+
+        if (trig2 == 3) {
+			
+			$("#sett").rotate({
+				endDeg: 360,
+				count: 1,
+				duration: 0.4
+			});
+			
+			
+			
+            $(".modal2").slideUp();
+            $(".modal2").hide(100);
+
+			if(trig!=2){
+            
+				$(".modal_shade").animate({
+					opacity: 0,
+				}, 100, function() {
+					$(".modal_shade").hide();
+					$("body").css("overflow-y", "auto");
+				});
+			
+			}
+			
+            trig2 = 1;
+
+			}
+
+
+});	
+
+
+	
+
+
+$(".modal_shade").click(function() {
+
+
+
+	$(".modal").slideUp();
+	$(".modal").hide(200);
+	
+	if(trig==2){
+		$("#menu").rotate({
+			endDeg: turn,
+			persist: true,
+			duration: 0.3,
+		});
+	turn=turn+90;
+	
+	}
+	
+	if(trig2==2){
+		$("#sett").rotate({
+			endDeg: 360,
+			count: 1,
+			duration: 0.4
+		});
+	}
+	
+	
+	
+	$(".modal2").slideUp();
+	$(".modal2").hide(200);
+ 
+	
+	
+	$(".modal_shade").animate({
+		opacity: 0,
+	}, 300, function() {
+
+
+
+		$(".modal_shade").hide();
+		$("body").css("overflow-y", "auto");
+	});
+
+	
+	trig = 1;
+	trig2 = 1;
+	
+});
+
+
+	
+
+
+
 
 
 

@@ -1,4 +1,3 @@
-<script src="js/jquery.min.js"></script>
 <?php
 
 $page=$_GET['p'];
@@ -185,26 +184,3 @@ echo "
 ";
 
 ?>
-<script>
-
-
-$( ".img_main" ).hover(
-  function() {
-    $( this ).animate({
-		opacity: 0.9,
-    }, 300);
-  
-
-  
-  }, function() {
-    $( this ).animate({
-		opacity: 1,
-    }, 300);
-  
-  
-  }
-);
-
-
-
-</script>
