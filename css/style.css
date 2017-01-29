@@ -16,7 +16,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	//vertical-align: baseline;
+	
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -27,6 +29,12 @@ body {
 	line-height: 1;
 	background: #e5e5e5;
 	overflow-x: hidden;
+  
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+	
 }
 ol, ul {
 	list-style: none;
@@ -46,34 +54,69 @@ table {
 
 
 .text{
-	border-bottom:1px solid #e5e5e5;
+
 	padding:10px;
 	background-color: white;
 	cursor:pointer;
 	color:black;
+	border-botom:1px solid grey;
 }
 
 
+
+
 .grid-item {
-	border-radius:5px 5px 0px 0px;
+	border-radius:5px;
+	margin-bottom:20px;
+	width:302px;
+	color:#474747;
+
+	background-color:white;
+	font-size:12pt;
+
+	border:1px solid #CFCFCF;
+	
+}
+
+
+.midle_butt{
+
+	border:2px solid #868686; 
+	padding:3px; 
+	border-radius:70px; 
+	text-align:center;
+	
+	cursor:pointer;
+	
+	-webkit-transition: all 0.2s ease;
+}
+
+.midle_butt:hover {
+	border:2px solid white; 
+	padding:8px;
+	color: white;
+	font-size:16px;
+
+}
+
+.grid-item-multy {
+	padding:10px;
 	margin-bottom:10px;
 	width:300px;
 	color:#474747;
-	font-family: 'Opem Sanc';
-	background-color:white;
+	border-radius:5px;
+	background-color:#262626;
 	font-size:12pt;
 	
 }
 
-.grid-item:hover {
 
-}
 
 
 .grid {
 	
     margin:0 auto;
-	margin-top:35px;
+	margin-top:40px;
 	//overflow: hidden;
 	background: #e5e5e5;
 	display:none;
@@ -106,14 +149,40 @@ table {
 
 
 .rating{
-	
 
-	background-color: white;
+	color:white;
+	opacity:0.9;
+	background-color: #262626;
 	font-size:12px;
 	padding-left:14px;
 	padding:10px;
+	border-radius: 0px 0px 5px 5px;
+	
+	-webkit-transition: all 0.8s ease;
+	
 	
 }
+
+.rating:hover .rating_hide{
+	display:block;
+	color:white;	
+	font-size:12px;
+	
+}
+
+.rating:hover .rating{
+	
+	font-size:12px;
+	
+}
+
+
+.rating{
+	
+	font-size:12px;
+	color:grey;
+}
+
 
 
 .search {
@@ -273,7 +342,27 @@ input[type="search"] {
 .img_main{
 	
 	width:300px;
-	border-radius:5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+
+	
+	
+;
+	
+	
+}
+
+.img_main:hover {
+	opacity: 0.98;
+	cursor: zoom-in;
+ transition:all 0.3s;
+}
+
+
+
+.img_main_multy{
+	
+	width:275px;
+	border-radius:5px;
 	margin-top:-3px;
 	margin:0 auto;
 	
@@ -282,12 +371,8 @@ input[type="search"] {
 	
 }
 
-.img_main:hover {
+.img_main_multy:hover {
 	opacity: 0.98;
 	cursor: zoom-in;
-	
-	
-	
-	
-	
+
 }
