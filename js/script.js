@@ -18,7 +18,7 @@ $('.grid').show();
 		itemSelector: '.grid-item',
 		columnWidth: 315,
 		isFitWidth: true,
-		transitionDuration: '0.5s'
+		transitionDuration: '0.3s'
 		
 		
 
@@ -39,8 +39,8 @@ grid.infinitescroll({
 	nextSelector: '#next_page',
 	// Selector of items to retrieve
 	itemSelector: '.grid-item',
-	// Loading message
-	loadingText: 'Loading new items…'
+	
+	extraScrollPx: 350
 },
 
 

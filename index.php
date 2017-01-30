@@ -22,7 +22,13 @@
 	<script src="js/jquery.infinitescroll.min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    
+    <script>
+		function abc2(n) {
+			n += "";
+			n = new Array(4 - n.length % 3).join("U") + n;
+			return n.replace(/([0-9U]{3})/g, "$1 ").replace(/U/g, "");
+		}
+	</script>
 
   </head>
 
@@ -37,9 +43,135 @@
   <hr>
   </div>
 
+  
+  
+  
+  
+  
   <div class='modal2' id='modal2'>
-  MODAL 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dignissim orci. Cras pellentesque eros eu lectus pulvinar, at tincidunt lorem malesuada. Suspendisse pulvinar auctor pretium. Nunc ornare mollis augue ac convallis
-  <hr>
+  
+  <form action='index.php' method='post'>
+	
+	<div style='paddong:5px; background-color:grey: color:white;'>
+		<font size=4 color=grey>Критерий сортировки постов:</font>	
+		<hr>
+	</div>
+  
+	<div style='width:180px; display:inline-block; padding:10px;'>
+			<font size=5>Лайки</font>
+			<label class="switch" style='float:right;'>
+			  <input name="rating" type="radio">
+			  <div class="slider round"></div>
+			</label>	
+	</div>
+	
+	
+	<div style='width:180px; display:inline-block; padding:10px;'>
+			<font size=5>Репосты</font>
+			<label class="switch" style='float:right;'>
+			  <input name="rating" type="radio">
+			  <div class="slider round"></div>
+			</label>		
+	</div>
+	
+	<div style='width:180px; display:inline-block; padding:10px;'>
+			<font size=5>Рейтинг</font>
+			<label class="switch" style='float:right;'>
+			  <input name="rating" type="radio">
+			  <div class="slider round"></div>
+			</label>	
+	</div>
+	
+	<hr>
+		<font size=4 color=grey>Период публикации постов:</font>	
+	<hr>
+	
+	<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>3ч.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time" type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+	
+	
+	<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>6ч.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time"  type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+
+	<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>12ч.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time"  type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+	
+
+	<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>24ч.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time"  type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+		
+
+
+
+
+		
+		
+		
+
+<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>3д.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time"  type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+	
+	
+	<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>7д.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time"  type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+
+	<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>14д.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time"  type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+	
+
+	<div style='width:130px; display:inline-block; padding:10px;'>
+		<font size=5>30д.</font>
+		<label class="switch" style='float:right;'>
+		  <input  name="time"  type="radio">
+		  <div class="slider round"></div>
+		</label>	
+	</div>
+
+
+
+
+
+	
+		<hr>
+		
+		<input type='submit' class='button7' value='Сохранить настройки'>
+	</form>
+		
   </div>
   
 
@@ -113,14 +245,22 @@
 		
 				<td width='33%'; >
 					<div class='rating_hide'>
-						<span class='glyphicon glyphicon-heart span1'></span><small style='font-size:10px; '>&nbsp; &nbsp; 5 432 344  </small><br>
-						<span class='glyphicon glyphicon-bullhorn span1'></span><small style='font-size:10px; '>&nbsp; &nbsp; 423 344  </small>
+						<span class='glyphicon glyphicon-heart span1'></span>&nbsp; &nbsp;<small id='like1' style='font-size:10px; '>   </small><br>
+						<span class='glyphicon glyphicon-bullhorn span1'></span>&nbsp; &nbsp; <small id='repost1' style='font-size:10px; '></small>
+					
+						
+						<script>
+							$('#like1').text(abc2("13788656"));
+							$('#repost1').text(abc2("43234543"));
+						</script>
+					
+					
 					<div>
 				</td>
 				
 				<td  width='33%' style='text-align:center;'>
 				
-					<div class='midle_butt'><span class='glyphicon glyphicon-unchecked' style='margin:0'></span></div>
+					<div class='midle_butt'><span class='glyphicon glyphicon-unchecked' style='margin-left:3.5px;'></span></div>
 				
 				</td>
 				
@@ -317,6 +457,8 @@
 
 	<script src="js/script.js"></script>
 	
+	
+
 	
 
   </body>
