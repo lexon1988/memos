@@ -62,7 +62,18 @@ table {
 	border-botom:1px solid grey;
 }
 
-
+.text_full{
+	
+	display:none;
+	position:absolute;
+	height:100%;
+	width:100%;
+	padding:5px;
+	background-color:white;
+	
+	z-index:99;
+	
+}
 
 
 .grid-item {
