@@ -48,128 +48,95 @@
   
   
   
-  <div class='modal2' id='modal2'>
+  <div class='modal2' id='modal2' style=''>
   
   <form action='index.php' method='post'>
 	
-	<div style='paddong:5px; background-color:grey: color:white;'>
-		<font size=4 color=grey>Критерий сортировки постов:</font>	
-		<hr>
-	</div>
-  
-	<div style='width:180px; display:inline-block; padding:10px;'>
-			<font size=5>Лайки</font>
-			<label class="switch" style='float:right;'>
-			  <input name="rating" type="radio">
-			  <div class="slider round"></div>
-			</label>	
-	</div>
-	
-	
-	<div style='width:180px; display:inline-block; padding:10px;'>
-			<font size=5>Репосты</font>
-			<label class="switch" style='float:right;'>
-			  <input name="rating" type="radio">
-			  <div class="slider round"></div>
-			</label>		
-	</div>
-	
-	<div style='width:180px; display:inline-block; padding:10px;'>
-			<font size=5>Рейтинг</font>
-			<label class="switch" style='float:right;'>
-			  <input name="rating" type="radio">
-			  <div class="slider round"></div>
-			</label>	
-	</div>
-	
-	<hr>
-		<font size=4 color=grey>Период публикации постов:</font>	
+
+	<h1>Критерий сортировки постов по популярности: </h1>
 	<hr>
 	
-	<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>3ч.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time" type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
-	
-	
-	<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>6ч.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time"  type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>Лайки</font>
+			<input class="tgl tgl-light" id="cb1" name='raing' type="radio"/>
+			<label class="tgl-btn" for="cb1"></label>
+		</div>
 
-	<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>12ч.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time"  type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
-	
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>Репосты</font>
+			<input class="tgl tgl-light" id="cb2" name='raing' type="radio"/>
+			<label class="tgl-btn" for="cb2"></label>
+		</div>
 
-	<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>24ч.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time"  type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>Рейтинг</font>
+			<input class="tgl tgl-light" id="cb3" name='raing' type="radio"/>
+			<label class="tgl-btn" for="cb3"></label>
+		</div>		
+	
+	<hr>	
+		<h1>Период публикации постов: </h1>
+	<hr>
+
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>3ч </font>
+			<input class="tgl tgl-light" id="cb4" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb4"></label>
+		</div>	
+
+
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>6ч </font>
+			<input class="tgl tgl-light" id="cb5" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb5"></label>
+		</div>	
+
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>12ч </font>
+			<input class="tgl tgl-light" id="cb6" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb6"></label>
+		</div>	
+
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>24ч </font>
+			<input class="tgl tgl-light" id="cb7" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb7"></label>
+		</div>	
+
 		
-
-
+		
+		
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>3д </font>
+			<input class="tgl tgl-light" id="cb8" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb8"></label>
+		</div>	
 
 
 		
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>7д </font>
+			<input class="tgl tgl-light" id="cb9" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb9"></label>
+		</div>	
+
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>14д </font>
+			<input class="tgl tgl-light" id="cb10" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb10"></label>
+		</div>	
+
+		<div style='text-align:center; widht:30%; padding:10px;  display: inline-block;'>
+			<font color='grey' size='4'>30д </font>
+			<input class="tgl tgl-light" id="cb11" name='time' type="radio"/>
+			<label class="tgl-btn" for="cb11"></label>
+		</div>			
 		
-		
-
-<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>3д.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time"  type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
-	
-	
-	<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>7д.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time"  type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
-
-	<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>14д.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time"  type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
-	
-
-	<div style='width:130px; display:inline-block; padding:10px;'>
-		<font size=5>30д.</font>
-		<label class="switch" style='float:right;'>
-		  <input  name="time"  type="radio">
-		  <div class="slider round"></div>
-		</label>	
-	</div>
-
-
-
-
-
-	
 		<hr>
 		
-		<input type='submit' class='button7' value='Сохранить настройки'>
+		<input type='submit' value='Сохранить' class='button'>
+		
+		<br><br><br><br><br><br>
 	</form>
 		
   </div>
