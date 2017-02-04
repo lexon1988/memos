@@ -1,4 +1,18 @@
+<!--
 	<a id='go_in_top3' style='margin-top:-40px;'></a>
+-->
+
+<!-- Полный текст2 -->
+<div class='modal_text' id='modal_text3' style=''>
+
+	 Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем
+	 <hr>
+	 <button class='button' id='modal_text_close3'>Закрыть окно</button>	
+		
+</div>	
+<!-- ### Полный текст2 -->
+
+
 
 
     <div class="grid-item grid-item-multy ">
@@ -16,7 +30,16 @@
 		 </div>	
 		 </div>	
 	  <!-- ### Полный текст -->
-	  	
+
+
+
+
+
+
+
+
+
+	  
 			<?php
 				list($width, $height, $type, $attr) = getimagesize("rezimg/1.jpg");
 				$perc1=275/($width*0.01)*0.01;
@@ -66,43 +89,43 @@
 			<div id="content-2" class="mCustomScrollbar" style='width:290px; height:300px;' data-mcs-theme="minimal-dark">
 			
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/1.jpg' style="margin:0px 0px -<?php echo $crop1; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/1.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/1.jpg' style="margin:0px 0px -<?php echo $crop1; ?>px 0px; "></a>
 			</div><br>
 			
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/2.jpg' style="margin:0px 0px -<?php echo $crop2; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/2.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/2.jpg' style="margin:0px 0px -<?php echo $crop2; ?>px 0px;"></a>
 			</div><br>
 
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/3.jpg' style="margin:0px 0px -<?php echo $crop3; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/3.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/3.jpg' style="margin:0px 0px -<?php echo $crop3; ?>px 0px;"></a>
 			</div><br>		
 			
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/4.jpg' style="margin:0px 0px -<?php echo $crop4; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/4.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/4.jpg' style="margin:0px 0px -<?php echo $crop4; ?>px 0px;"></a>
 			</div><br>				
 			
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/5.jpg' style="margin:0px 0px -<?php echo $crop5; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/5.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/5.jpg' style="margin:0px 0px -<?php echo $crop5; ?>px 0px;"></a>
 			</div><br>					
 
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/6.jpg' style="margin:0px 0px -<?php echo $crop6; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/6.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/6.jpg' style="margin:0px 0px -<?php echo $crop6; ?>px 0px;"></a>
 			</div><br>	
 
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/7.jpg' style="margin:0px 0px -<?php echo $crop7; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/7.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/7.jpg' style="margin:0px 0px -<?php echo $crop7; ?>px 0px;"></a>
 			</div><br>				
 
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/8.jpg' style="margin:0px 0px -<?php echo $crop8; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/8.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/8.jpg' style="margin:0px 0px -<?php echo $crop8; ?>px 0px;"></a>
 			</div><br>	
 
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/9.jpg' style="margin:0px 0px -<?php echo $crop9; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/9.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/9.jpg' style="margin:0px 0px -<?php echo $crop9; ?>px 0px;"></a>
 			</div><br>	
 
 			<div style="overflow:hidden;">
-				<img  class='img_main img_main_multy'  src='http://masonry/rezimg/10.jpg' style="margin:0px 0px -<?php echo $crop10; ?>px 0px;">
+				<a class="fancybox-buttons" data-fancybox-group="gal1" href="http://masonry/rezimg/10.jpg"><img  class='img_main img_main_multy'  src='http://masonry/rezimg/10.jpg' style="margin:0px 0px -<?php echo $crop10; ?>px 0px;"></a>
 			</div><br>				
 			
 			</div>
@@ -114,8 +137,9 @@
 			
 			<div class='text' style='color:white; background-color:#262626;'>
 				<p>А тут мы напишем текста на 140 символов, такой же как у твиттера, который стимулирует креотивность и прочее. Осталось ещё примерно 30 символов, но нужно завершить нез... </p>
-			
-			<a href='#go_in_top3' style='text-decoration:none;'><div class='button_full_text' id='text_full_show3'>Весь текст- <b>43245</b> символов</div></a>
+				
+				<a href='#go_in_top3' style='text-decoration:none;'><div class='button_full_text' id='text_full_show3' style='width:79%;  display:inline-block'>Текст- 45654 знаков</div></a>
+				<a href='#go_in_top3' style='text-decoration:none;'><div class='button_full_text' id='text_full_show_modal3' style='width:19%;  display:inline-block'><span class='glyphicon glyphicon-zoom-in'></span></div></a>		
 
 			</div>
 			
@@ -140,6 +164,25 @@
 										$('#text_full_close3').click(function() {
 											$('#text_full3').hide();
 										});
+
+										$("#text_full_show_modal3").click(function() {
+											var scroll=$(window).scrollTop()-1;
+											$(window).scrollTop(scroll);
+											
+										
+											$("#modal_text3").show();
+											$("body").css("overflow-y", "hidden");								
+										
+										});
+										
+										$("#modal_text_close3").click(function() {
+											$("#modal_text3").slideUp();
+											$("#modal_text3").hide();
+											$("body").css("overflow-y", "auto");	
+										
+										});
+										
+
 									</script>
 								</div>
 							</td>

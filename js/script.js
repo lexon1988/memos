@@ -374,8 +374,7 @@ $.fn.rotate = function(options) {
 
 	
 	
-	
-	
+
 
 
 
