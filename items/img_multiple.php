@@ -136,11 +136,7 @@
 			
 			
 			<div class='text' style='color:white; background-color:#262626;'>
-				<p>А тут мы напишем текста на 140 символов, такой же как у твиттера, который стимулирует креотивность и прочее. Осталось ещё примерно 30 символов, но нужно завершить нез... </p>
-				
-				<a href='#go_in_top3' style='text-decoration:none;'><div class='button_full_text' id='text_full_show3' style='width:79%;  display:inline-block'>Текст- 45654 знаков</div></a>
-				<a href='#go_in_top3' style='text-decoration:none;'><div class='button_full_text' id='text_full_show_modal3' style='width:19%;  display:inline-block'><span class='glyphicon glyphicon-zoom-in'></span></div></a>		
-
+				<p>А тут мы напишем текста на 140 символов, такой же как у твиттера, который стимулирует креотивность и прочее. Осталось ещё примерно 30 символов, но нужно... <a href='###'  id='text_full_show3' style='color: grey;'> +785</a></p>
 			</div>
 			
 
@@ -153,43 +149,13 @@
 								<div class='rating_hide'>
 									<span class='glyphicon glyphicon-heart span1'></span>&nbsp;&nbsp;<small id='like1' style='font-size:10px; '>   </small><br>
 									<span class='glyphicon glyphicon-bullhorn span1'></span>&nbsp;&nbsp;<small id='repost1' style='font-size:10px; '></small>
-									<script>
-										$('#like1').text(abc2("13788656"));
-										$('#repost1').text(abc2("43234543"));
-				
-										$('#text_full_show3').click(function() {
-											$("#text_full3").show();							
-										});
 
-										$('#text_full_close3').click(function() {
-											$('#text_full3').hide();
-										});
-
-										$("#text_full_show_modal3").click(function() {
-											var scroll=$(window).scrollTop()-1;
-											$(window).scrollTop(scroll);
-											
-										
-											$("#modal_text3").show();
-											$("body").css("overflow-y", "hidden");								
-										
-										});
-										
-										$("#modal_text_close3").click(function() {
-											$("#modal_text3").slideUp();
-											$("#modal_text3").hide();
-											$("body").css("overflow-y", "auto");	
-										
-										});
-										
-
-									</script>
 								</div>
 							</td>
 							
 							<td  width='33%' style='text-align:center;'>
 							
-								<div class='midle_butt'><span class='glyphicon glyphicon-unchecked' style='margin-left:3.5px;'></span></div>
+								<div class='midle_butt' id='text_full_show_modal3'><span class='glyphicon glyphicon-unchecked' style='margin-left:3.5px;'></span></div>
 							
 							</td>
 							
@@ -210,6 +176,34 @@
 	</div>
 	  
 
-	  
-	  
+	<script>
+		$('#like1').text(abc2("13788656"));
+		$('#repost1').text(abc2("43234543"));
+
+		$('#text_full_show3').click(function() {
+			$("#text_full3").show();							
+		});
+
+		$('#text_full_close3').click(function() {
+			$('#text_full3').hide();
+		});
+
+		$("#text_full_show_modal3").click(function() {
+			var scroll=$(window).scrollTop()-1;
+			$(window).scrollTop(scroll);
+			
+		
+			$("#modal_text3").show();
+			$("body").css("overflow-y", "hidden");								
+		
+		});
+		
+		$("#modal_text_close3").click(function() {
+			$("#modal_text3").slideUp();
+			$("#modal_text3").hide();
+			$("body").css("overflow-y", "auto");	
+		
+		});
+	</script>	  
+
 	  
