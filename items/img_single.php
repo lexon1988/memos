@@ -1,24 +1,22 @@
 
-<div class='modal_text' id='modal_text2' style='text-align:center; background-color:black;'>
+<div class='modal_text' id='modal_text2' style=''>
 	
-	<span class='glyphicon glyphicon-remove' style='float:right; color:white; font-size:30px; color:white; padding:20px;' id='modal_text_close2'></span>
+	<span class='glyphicon glyphicon-remove' style='float:right; color:white; font-size:30px; color:white; padding:15px;' id='modal_text_close2'></span>
 	<br>
 	<br>
-	<br>
-	<div style='margin:0 auto; width:50%; text-align:center;'>
+     <hr>
+
+	<div style='margin:0 auto; '>
 	
 	
 	 
 	<div style="overflow:hidden;">
-		<img src='rezimg/6.jpg' style='margin:0 auto; padding:20px; max-width:100%; margin:0px 0px -50px 0px;  display: inline-block;'>
+		<img src='rezimg/6.jpg' class="modal_text_img" style='margin:0 auto; margin:0px 0px -50px 0px; '>
 	</div>
 
-	<div style="overflow:hidden;">
-		<img src='rezimg/9.jpg' style='margin:0 auto; padding:20px; max-width:100%; margin:0px 0px -50px 0px;  display: inline-block;'>
-	</div>	
-	<br>
-	
-	<p style='padding:10px; background-color:white; width:100%; text-align:left;'>
+
+
+	<p class="modal_text_text" style='padding:20px; background-color:white;  height: 100%; text-align:justify;'>
 		Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем
 	</p>
 		
@@ -48,7 +46,8 @@
 		 </div>	
 		 </div>	
 	  <!-- ### Полный текст -->
-		
+
+       <div class="soc_block">dasdas</div>
 		
 		<?php
 			list($width, $height, $type, $attr) = getimagesize("rezimg/6.jpg");

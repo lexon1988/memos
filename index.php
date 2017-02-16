@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="viewport" content="width=device-width, initial-scale=0.90">
 	<title>Memario.com</title>
   
 
@@ -91,8 +91,6 @@
 
 		include('items/img_single.php');
 		include('items/img_multiple.php');
-
-		
 		include('items/loren.php');
 	
 	?>
