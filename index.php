@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=0.90">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
 	<title>Memario.com</title>
   
 
@@ -20,9 +20,18 @@
 
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
+
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?94" charset="windows-1251"></script>
+
     <script>
-					
+				
+				
 	$(document).ready(function() {
+			
+			
+	
+
+  
 			
 				$('.fancybox-buttons').fancybox({
 					openEffect  : 'none',
@@ -64,6 +73,7 @@
 
 	});
 	
+
 
 		function abc2(n) {
 			n += "";
