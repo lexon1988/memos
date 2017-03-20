@@ -15,6 +15,7 @@
               id='modal_text_close2'></span>
     </div>
 
+    <br>
 
     <div style='margin:0 auto; '>
 
@@ -25,7 +26,7 @@
 
 
         <div style="background-color: #3f3f3f; whidth:100%; padding-bottom: 40px;">
-            <br>
+
             <div class="modal_text_text" style=background-color:white;
             '>
             Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели
@@ -43,7 +44,7 @@
             это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем
 
         </div>
-
+        <br>
 
     </div>
 
@@ -85,10 +86,6 @@
     </div>
     <!-- ### Полный текст -->
 
-    <div class="soc_block">
-
-
-    </div>
 
     <?php
     list($width, $height, $type, $attr) = getimagesize("./images/rezimg/6.jpg");

@@ -102,70 +102,70 @@
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/1.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/1.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/1.jpg'
                         style="margin:0px 0px -<?php echo $crop1; ?>px 0px; "></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/2.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/2.jpg'
+                        class='img_main img_main_multy' src='/images//rezimg/2.jpg'
                         style="margin:0px 0px -<?php echo $crop2; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/3.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/3.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/3.jpg'
                         style="margin:0px 0px -<?php echo $crop3; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/4.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/4.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/4.jpg'
                         style="margin:0px 0px -<?php echo $crop4; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/5.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/5.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/5.jpg'
                         style="margin:0px 0px -<?php echo $crop5; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/6.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/6.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/6.jpg'
                         style="margin:0px 0px -<?php echo $crop6; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/7.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/7.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/7.jpg'
                         style="margin:0px 0px -<?php echo $crop7; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/8.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/8.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/8.jpg'
                         style="margin:0px 0px -<?php echo $crop8; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/9.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/9.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/9.jpg'
                         style="margin:0px 0px -<?php echo $crop9; ?>px 0px;"></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/10.jpg"><img
-                        class='img_main img_main_multy' src='http://masonry/rezimg/10.jpg'
+                        class='img_main img_main_multy' src='/images/rezimg/10.jpg'
                         style="margin:0px 0px -<?php echo $crop10; ?>px 0px;"></a>
         </div>
         <br>

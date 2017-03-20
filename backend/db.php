@@ -11,10 +11,7 @@ class Database
         $this->conn = mysqli_connect(HOST, USER_NAME, USER_PASS, DB_NAME);
         if (!$this->conn) {
             die("Connection failed: " . mysqli_connect_error());
-        } else {
-            //echo "Ok";
         }
-
 
     }
 
@@ -42,7 +39,6 @@ class Database
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
         mysqli_close($conn);
-
     }
     //-----------------------------------------------------------------------------------------------------
 
@@ -57,10 +53,8 @@ class Database
 
     public function db_update($table_name, $sql_param)
     {
-
         $conn = $this->db_connect();
         $conn = $this->conn;
-
 
         $sql = "UPDATE " . $table_name . " " . $sql_param;
         if (mysqli_query($conn, $sql)) {
@@ -69,7 +63,6 @@ class Database
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
         mysqli_close($conn);
-
     }
     //-----------------------------------------------------------------------------------------------------
 
@@ -77,33 +70,26 @@ class Database
     //УДАЛЯЕМ из таблицы-------------------------------------------------------------------------------------
     public function db_delete($table_name, $sql_param)
     {
-
-
         $conn = $this->db_connect();
         $conn = $this->conn;
 
-
         $sql = "DELETE FROM " . $table_name . " " . $sql_param;
         if (mysqli_query($conn, $sql)) {
-
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
         mysqli_close($conn);
-
     }
     //-----------------------------------------------------------------------------------------------------
 
 
     //Выводим из таблицы-------------------------------------------------------------------------------------
-    public function db_select($table_name, $sql_param)
+    public function db_select($table_name, $from, $sql_param)
     {
-
-        $conn = $this->db_connect();
+        $this->db_connect();
         $conn = $this->conn;
 
-
-        $sql = "SELECT * FROM " . $table_name . " " . $sql_param;
+        $sql = "SELECT ".$from." FROM " . $table_name . " " . $sql_param;
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
@@ -111,13 +97,11 @@ class Database
             while ($row = mysqli_fetch_assoc($result)) {
 
                 $rows[] = $row;
-
             }
-
         }
 
+        mysqli_close($conn);
         return $rows;
-
     }
 
     //------------------------------------------
