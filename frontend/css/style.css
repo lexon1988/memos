@@ -48,8 +48,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+
 }
 
 table {
@@ -63,13 +62,21 @@ a:hover {
 
 }
 
+.grid {
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+
+
 .text {
 
     padding: 10px;
     background-color: white;
     cursor: pointer;
     color: black;
-    border-botom: 1px solid grey;
 
     text-align: justify;
 }
@@ -80,27 +87,42 @@ a:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     background-color: white;
-
+    margin-left: -2px;
+    margin-top: -3px;
     z-index: 99;
 
 }
 
+.text_full_multy{
+
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -10px;
+
+
+}
+
+
 .grid-item {
     text-align: center;
 
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 302px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 300px;
     color: #474747;
-
+    padding: 2px;
+    border: 1px solid #CFCFCF;
     background-color: white;
     font-size: 12pt;
 
-    border: 0px solid #CFCFCF;
 
 }
+
+
 
 .grid-item-multy {
     padding: 10px;
@@ -134,14 +156,7 @@ a:hover {
 
 }
 
-.grid {
 
-    margin: 0 auto;
-    margin-top: 40px;
-/ / overflow: hidden;
-    background: #e5e5e5;
-    display: none;
-}
 
 .menu {
 
@@ -240,7 +255,7 @@ a:hover {
     height: 100%;
     cursor: pointer;
 
-    background: url(../img/search.png) 50% no-repeat;
+    background: url(/images/img/search.png) 50% no-repeat;
     opacity: 0.3;
 }
 
@@ -338,7 +353,7 @@ input[type="search"] {
     display: none;
     position: fixed;
 
-    background-color:#333333;
+background-image: url("modal_text.png");
     text-align: center;
     width: 100%;
     height: 100%;
@@ -357,13 +372,13 @@ input[type="search"] {
 
 .modal_text_text{
 
-    width: 800px;
+    width: 1000px;
     padding:20px;
     height: 100%;
-    text-align:justify;
+    text-align:left;
     margin: 0 auto;
-    padding-bottom: 40px;
-    border-radius: 10px;
+    background-color: white;
+
 
 
 }
@@ -389,13 +404,14 @@ input[type="search"] {
 
 .img_main {
 
-    width: 300px;
+    width: 294px;
     border-radius: 5px 5px 0px 0px;;
+
 
 }
 
 .img_main:hover {
-    opacity: 0.98;
+
     cursor: zoom-in;
     transition: all 0.3s;
 
@@ -404,16 +420,15 @@ input[type="search"] {
 .img_main_multy {
 
     width: 275px;
-    border-radius: 5px;
     margin-top: -3px;
-    margin: 0 auto;
 
+    border: none;
     border-radius: 0px;
+
 
 }
 
 .img_main_multy:hover {
-    opacity: 0.98;
 
     cursor: zoom-in;
 
@@ -588,10 +603,51 @@ li {
     }
 
     .modal_text_text{
-        padding:10px;
+        padding:15px;
         width: 100%;
-        font-size: 25px;
+        font-size: 20px;
         border-radius: 0;
+    }
+
+    .modal{
+        border: none;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+
+    .grid{
+
+
+
+    }
+
+
+    .grid-item{
+
+
+    }
+
+    .img_main{
+
+
+
+    }
+
+    .search_bar_td{
+        display: none;
+    }
+
+    .auth_td{
+
+        text-align: right;
     }
 
 }

@@ -3,7 +3,7 @@
 function saveimage($input, $output) {
 
 
-set_time_limit (3);
+set_time_limit (6);
 
 $today = date("m.d.Y");
 // файл и новый размер

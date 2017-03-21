@@ -14,6 +14,11 @@ $db = new Database();
 
 $items = $db->db_select("items","*", "WHERE attachment_hash<>'' AND bad_post=0 AND good_post=0 GROUP BY attachment_hash order by RAND() LIMIT 100");
 
+if(empty($items)){
+
+    exit();
+
+}
 
 
 foreach ($items as $item) {

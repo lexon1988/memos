@@ -27,11 +27,11 @@
 <div class="grid-item grid-item-multy ">
 
     <!-- Полный текст -->
-    <div class='text_full' style='margin-top:-10px; margin-left:-10px;' id='text_full3'>
-        <span class='glyphicon glyphicon-remove' style='float:right; margin-top:10px; margin-left:10px;''
+    <div class='text_full text_full_multy' id='text_full3'>
+        <span class='glyphicon glyphicon-remove' style='float:right; margin-top:10px; margin-left:20px; padding-right:2px;  cursor: pointer;'
         id='text_full_close3'></span>
         <hr>
-        <div class="mCustomScrollbar" style=' height:90%;  padding:5px; text-align:justify;' data-mcs-theme="dark-2">
+        <div class="mCustomScrollbar" style=' height:90%;  padding:3px; text-align:justify;' data-mcs-theme="dark-2">
 
             Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели
             превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову,
@@ -98,7 +98,18 @@
     ?>
 
 
-    <div id="content-2" class="mCustomScrollbar" style='width:290px; height:300px;' data-mcs-theme="minimal-dark">
+    <div id="content-2" class="mCustomScrollbar" style='width:289px; height:300px;' data-mcs-theme="minimal-dark">
+
+
+
+        <div style="overflow:hidden;">
+            <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/2.jpg"><img
+                        class='img_main img_main_multy' src='/images//rezimg/2.jpg'
+                        style="margin:0px 0px -<?php echo $crop2; ?>px 0px;"></a>
+        </div>
+        <br>
+
+
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/1.jpg"><img
@@ -107,12 +118,8 @@
         </div>
         <br>
 
-        <div style="overflow:hidden;">
-            <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/2.jpg"><img
-                        class='img_main img_main_multy' src='/images//rezimg/2.jpg'
-                        style="margin:0px 0px -<?php echo $crop2; ?>px 0px;"></a>
-        </div>
-        <br>
+
+
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/3.jpg"><img

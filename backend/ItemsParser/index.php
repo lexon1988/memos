@@ -107,7 +107,7 @@ for($k=0;$k<22; $k++){
 
 
                 $items_insert_array['attachments'] = json_encode($attachments_array);
-                $items_insert_array['attachment'] = $items_array->response[$j]->attachment->photo->src_small;
+                $items_insert_array['attachment'] = $attachments_array[0];
 
                 if (trim($items_array->response[$j]->text) <> "") {
                     $items_insert_array['text_hash'] = hash('md5', $items_array->response[$j]->text);
