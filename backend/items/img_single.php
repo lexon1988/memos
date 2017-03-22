@@ -15,22 +15,54 @@
 
     <div style='margin:0 auto; '>
 
-        <br>
-        <div style="overflow:hidden;">
-            <img src='/images/rezimg/2.jpg' class="modal_text_img" style='margin:0 auto; margin:0px 0px -50px 0px; '>
+        <br class="BR_hide">
+
+        <div style="overflow: hidden;">
+            <img src='/images/rezimg/2.jpg' class="modal_text_img">
         </div>
-        <br>
-        <div style="overflow:hidden;">
-            <img src='/images/rezimg/3.jpg' class="modal_text_img" style='margin:0 auto; margin:0px 0px -50px 0px; '>
+
+        <br class="BR_hide">
+
+        <div style="overflow: hidden;">
+            <img src='/images/rezimg/3.jpg' class="modal_text_img">
         </div>
-        <br>
-        <div style="overflow:hidden;">
-            <img src='/images/rezimg/4.jpg' class="modal_text_img" style='margin:0 auto; margin:0px 0px -50px 0px; '>
+
+        <br class="BR_hide">
+
+        <div style="overflow: hidden;">
+            <img src='/images/rezimg/4.jpg' class="modal_text_img">
         </div>
-        <br>
-        <div style="background-color: white; whidth:100%;">
+
+
+        <br class="BR_hide">
+
+        <div style="overflow: hidden;">
+            <img src='/images/rezimg/5.jpg' class="modal_text_img">
+        </div>
+
+
+        <br class="BR_hide">
+
+        <div style="overflow: hidden;">
+            <img src='/images/rezimg/6.jpg' class="modal_text_img">
+        </div>
+
+
+        <br class="BR_hide">
+
+        <div style="overflow: hidden;">
+            <img src='/images/rezimg/7.jpg' class="modal_text_img">
+        </div>
+
+
+
+        <br class="BR_hide">
+        <div style="background-color: white; width:100%; height:100%;">
 
             <div class="modal_text_text">
+
+                <?php echo $hheight; ?>
+
                 Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели
                 превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову,
                 свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось
@@ -101,15 +133,11 @@
     <!-- ### Полный текст -->
 
 
-    <?php
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/8.jpg");
-    $perc = 300 / ($width * 0.01) * 0.01;
-    $crop = 32 * $perc;
-    ?>
+
 
     <div style="overflow:hidden;">
-        <a href='/images/rezimg/6.jpg' class='fancybox-thumbs' data-fancybox-group='button'><img class='img_main'
-                                                                                                 src='/images/rezimg/8.jpg'
+        <a href='/images/rezimg/3.jpg' class='fancybox-thumbs' data-fancybox-group='button'><img class='img_main'
+                                                                                                 src='/images/rezimg/3.jpg'
                                                                                                  style="margin:0px 0px -<?php echo $crop; ?>px 0px;"></a>
     </div>
 

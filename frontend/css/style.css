@@ -16,7 +16,7 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
-/ / vertical-align: baseline;
+
 
 }
 
@@ -30,6 +30,7 @@ body {
     line-height: 1;
     background: #e5e5e5;
     overflow-x: hidden;
+    text-align: center;
 
     -webkit-transition: all 0.3s ease;;
     -moz-transition: all 0.3s ease;;
@@ -66,10 +67,8 @@ a:hover {
     margin: 0 auto;
     margin-top: 35px;
     text-align: center;
+
 }
-
-
-
 
 .text {
 
@@ -95,7 +94,7 @@ a:hover {
 
 }
 
-.text_full_multy{
+.text_full_multy {
 
     padding: 10px;
     height: 100%;
@@ -103,9 +102,7 @@ a:hover {
     margin-left: -10px;
     margin-top: -10px;
 
-
 }
-
 
 .grid-item {
     text-align: center;
@@ -119,10 +116,7 @@ a:hover {
     background-color: white;
     font-size: 12pt;
 
-
 }
-
-
 
 .grid-item-multy {
     padding: 10px;
@@ -156,14 +150,7 @@ a:hover {
 
 }
 
-
-
 .menu {
-
-/ / position: fixed;
-/ / height: 55 px;
-/ / border-bottom: 1 px solid grey;
-/ / opacity: 0.97;
 
     cursor: pointer;
     z-index: 99;
@@ -189,7 +176,7 @@ a:hover {
     font-size: 12px;
     padding-left: 14px;
     padding: 10px;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0 0 5px 5px;
 
     -webkit-transition: all 0.8s ease;
 
@@ -352,38 +339,36 @@ input[type="search"] {
 .modal_text {
     display: none;
     position: fixed;
-
-background-image: url("modal_text.png");
+    background-image: url("modal_text.png");
     text-align: center;
     width: 100%;
     height: 100%;
-
-
     top: 0;
     left: 0;
     right: 0;
-
     font-size: 20px;
-
     overflow-y: auto;
     z-index: 99999;
 }
 
-
-.modal_text_text{
-
-    width: 1000px;
-    padding:20px;
-    height: 100%;
-    text-align:left;
-    margin: 0 auto;
-    background-color: white;
-
-
+.modal_text_img {
+    width: auto;
+    max-width: 80%;
 
 }
 
-.modal_text_topbar{
+.modal_text_text {
+
+    width: 1000px;
+    padding: 20px;
+    height: 100%;
+    text-align: left;
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+.modal_text_topbar {
     text-align: left;
     background-color: #3f3f3f;
     padding: 10px;
@@ -392,13 +377,11 @@ background-image: url("modal_text.png");
     font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
-
 .but {
 
     width: 100%;
     height: 20px;
     padding: 20px;
-
 
 }
 
@@ -406,7 +389,6 @@ background-image: url("modal_text.png");
 
     width: 294px;
     border-radius: 5px 5px 0px 0px;;
-
 
 }
 
@@ -425,7 +407,6 @@ background-image: url("modal_text.png");
     border: none;
     border-radius: 0px;
 
-
 }
 
 .img_main_multy:hover {
@@ -434,11 +415,10 @@ background-image: url("modal_text.png");
 
 }
 
-
-.grid-item:hover  .soc_block{
+.grid-item:hover .soc_block {
     opacity: 4;
     height: 20px;
-    padding-bottom:5px;
+    padding-bottom: 5px;
     text-align: right;
     background-color: white;
     transition: opacity .2s ease-out;
@@ -446,7 +426,6 @@ background-image: url("modal_text.png");
     -webkit-transition: opacity .2s ease-out;
     -o-transition: opacity .2s ease-out;
 }
-
 
 ul {
     list-style-type: none;
@@ -571,45 +550,35 @@ li {
 
 }
 
-
-.soc_block{
+.soc_block {
 
     position: absolute;
-    height: 0px;
     padding: 10px;
-    color:black;
+    color: black;
     width: 100%;
-    opacity: 0;
     background-color: lightgrey;
-    border:1px solid white;
-    border-radius:7px 7px 0px 0px;
+    border: 1px solid white;
+    border-radius: 7px 7px 0px 0px;
     z-index: 80;
 
 }
 
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1200px) {
-    .modal_text_img{
-        width: 100%;
+
+    .modal_text_img {
+
+        min-width: 100%;
+
     }
 
-    .modal_text_text{
-        padding:15px;
+    .modal_text_text {
+        padding: 15px;
         width: 100%;
         font-size: 20px;
         border-radius: 0;
     }
 
-    .modal{
+    .modal {
         border: none;
         width: 100%;
         height: 100%;
@@ -617,37 +586,40 @@ li {
 
     }
 
-}
+    .BR_hide {
 
+        display: none;
+
+    }
+
+}
 
 @media (max-width: 500px) {
 
-
-    .grid{
-
-
+    .grid {
 
     }
 
-
-    .grid-item{
-
+    .grid-item {
 
     }
 
-    .img_main{
-
-
+    .img_main {
 
     }
 
-    .search_bar_td{
+    .search_bar_td {
         display: none;
     }
 
-    .auth_td{
+    .auth_td {
 
         text-align: right;
+    }
+
+    .menu_logo_td {
+
+        text-align: left;
     }
 
 }

@@ -7,14 +7,11 @@
 		  
 	  </p>
 	</nav>
-	   
 
-	<script src="./frontend/js/jquery.fancybox.pack.js"></script>
-	<script src="./frontend/js/script.js"></script>
-	
-	
+    <script src="/frontend/js/script.js"></script>
+	<script src="/frontend/js/jquery.fancybox.pack.js"></script>
 
-	
+
 
   </body>
 </html>

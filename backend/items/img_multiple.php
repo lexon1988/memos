@@ -54,48 +54,6 @@
     <!-- ### Полный текст -->
 
 
-    <?php
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/1.jpg");
-    $perc1 = 275 / ($width * 0.01) * 0.01;
-    $crop1 = 32 * $perc1;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/2.jpg");
-    $perc2 = 275 / ($width * 0.01) * 0.01;
-    $crop2 = 32 * $perc2;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/3.jpg");
-    $perc3 = 275 / ($width * 0.01) * 0.01;
-    $crop3 = 32 * $perc3;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/4.jpg");
-    $perc4 = 275 / ($width * 0.01) * 0.01;
-    $crop4 = 32 * $perc4;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/5.jpg");
-    $perc5 = 275 / ($width * 0.01) * 0.01;
-    $crop5 = 32 * $perc5;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/6.jpg");
-    $perc6 = 275 / ($width * 0.01) * 0.01;
-    $crop6 = 32 * $perc6;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/7.jpg");
-    $perc7 = 275 / ($width * 0.01) * 0.01;
-    $crop7 = 32 * $perc7;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/8.jpg");
-    $perc8 = 275 / ($width * 0.01) * 0.01;
-    $crop8 = 32 * $perc8;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/9.jpg");
-    $perc9 = 275 / ($width * 0.01) * 0.01;
-    $crop9 = 32 * $perc9;
-
-    list($width, $height, $type, $attr) = getimagesize("./images/rezimg/10.jpg");
-    $perc10 = 275 / ($width * 0.01) * 0.01;
-    $crop10 = 32 * $perc10;
-
-    ?>
 
 
     <div id="content-2" class="mCustomScrollbar" style='width:289px; height:300px;' data-mcs-theme="minimal-dark">
@@ -105,7 +63,7 @@
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/2.jpg"><img
                         class='img_main img_main_multy' src='/images//rezimg/2.jpg'
-                        style="margin:0px 0px -<?php echo $crop2; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
@@ -114,7 +72,7 @@
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/1.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/1.jpg'
-                        style="margin:0px 0px -<?php echo $crop1; ?>px 0px; "></a>
+                        ></a>
         </div>
         <br>
 
@@ -124,56 +82,56 @@
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/3.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/3.jpg'
-                        style="margin:0px 0px -<?php echo $crop3; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/4.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/4.jpg'
-                        style="margin:0px 0px -<?php echo $crop4; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/5.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/5.jpg'
-                        style="margin:0px 0px -<?php echo $crop5; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/6.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/6.jpg'
-                        style="margin:0px 0px -<?php echo $crop6; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/7.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/7.jpg'
-                        style="margin:0px 0px -<?php echo $crop7; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/8.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/8.jpg'
-                        style="margin:0px 0px -<?php echo $crop8; ?>px 0px;"></a>
+                       ></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/9.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/9.jpg'
-                        style="margin:0px 0px -<?php echo $crop9; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
         <div style="overflow:hidden;">
             <a class="fancybox-buttons" data-fancybox-group="gal1" href="/images/rezimg/10.jpg"><img
                         class='img_main img_main_multy' src='/images/rezimg/10.jpg'
-                        style="margin:0px 0px -<?php echo $crop10; ?>px 0px;"></a>
+                        ></a>
         </div>
         <br>
 
