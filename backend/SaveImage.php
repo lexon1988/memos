@@ -11,9 +11,7 @@ $output=$_GET['output'];
 function saveimage($input, $output)
 {
 
-
-
-    $today = date("m.d.Y");
+    $today = date("d.m.Y");
     // файл и новый размер
 
 

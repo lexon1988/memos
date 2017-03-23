@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <link rel="stylesheet" href="jquery.webui-popover.css" />
+  <script src="jquery.min.js" ></script>
+  <script src="jquery.webui-popover.js" ></script>
+
+  
+  
+  
+</head>
+<body>
+
+<br><br><br>
+<div style="width:200px; border:1px solid black; ">
+
+<a href="#" class="trigger" data-placement="auto-bottom">trigger 1</a>
+
+</div>
+
+
+<div id="myPopup" style="display:none;">
+<p>Lorem Ipsum is simply dummy text<br> of the printing and typesetting industry.</p>
+</div>
+   
+   <script type="text/javascript">
+    $(document).ready(function(){
+
+        $('.trigger').webuiPopover({url:'#myPopup'});
+
+    }); 
+  </script>
+
+
+
+
+
+    
+</body>
+</html>

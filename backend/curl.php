@@ -1,5 +1,6 @@
 <?php
 
+
 function get_content($site,$timeout){
 	
     $ch = curl_init();

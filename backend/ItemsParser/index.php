@@ -1,10 +1,11 @@
 <?php
-set_time_limit(60);
+set_time_limit(59);
 
+include_once('../curl.php');
 include_once('../db.php');
 $db = new Database();
 
-for($k=0;$k<22; $k++){
+for ($k = 0; $k < 22; $k++) {
 
     $counter1 = file_get_contents("counter1.txt");
     $counter2 = file_get_contents("counter2.txt");
@@ -26,7 +27,7 @@ for($k=0;$k<22; $k++){
     }
 
 
-    $api_response = file_get_contents("https://api.vk.com/method/wall.get?owner_id=-" . trim($gid) . "&count=30");
+    $api_response = get_content("https://api.vk.com/method/wall.get?owner_id=-" . trim($gid) . "&count=30", 4);
     $items_array = json_decode($api_response);
     //print_r($items_array);
 
@@ -83,6 +84,23 @@ for($k=0;$k<22; $k++){
 
                 }
 
+
+            }
+
+            //Есть ли в базе эта запись? Нужно после того, как временные файлы обнуляться
+            if ($update_item == 0 AND $ignore == 0) {
+
+                $wall_id_check = $db->db_select("items", "wall_id", "WHERE wall_id='$wall_id' LIMIT 1");
+                if ($wall_id_check[0] <> "") {
+
+                    $fp = fopen("update.txt", "a");
+                    $mytext = $wall_id . "\r\n";
+                    $test = fwrite($fp, $mytext);
+                    fclose($fp);
+
+                    $update_item = 1;
+
+                }
             }
 
 
@@ -120,6 +138,13 @@ for($k=0;$k<22; $k++){
                 $items_insert_array['rating'] = $items_array->response[$j]->likes->count + $items_array->response[$j]->reposts->count;
 
                 $db->db_insert("items", $items_insert_array);
+
+                if ($items_insert_array['attachment'] == "" AND $items_insert_array['text_hash'] <> "") {
+
+                    $item_hash = $items_insert_array['text_hash'];
+                    $db->db_update("items", "SET good_post=1,item_hash='$item_hash' WHERE wall_id='$wall_id'");
+
+                }
 
                 $fp = fopen("update.txt", "a");
                 $mytext = $wall_id . "\r\n";

@@ -1,0 +1,17 @@
+
+
+<script src="clipboard.min.js"></script>
+
+<textarea ></textarea>
+<div style='position:absolute; left:-111111px;'>
+<div id="textarea-example" style=''>Совсем другой текст</div>
+<div id="textarea-example1" style=''>Ещё другее</div>
+</div>
+
+<br><br>
+
+<button class="btn-clipboard" data-clipboard-target="#textarea-example">Скопировать в буфер обмена</button>
+<button class="btn-clipboard" data-clipboard-target="#textarea-example1">Скопировать в буфер обмена</button>
+<script>
+new Clipboard('.btn-clipboard'); // Не забываем инициализировать библиотеку на нашей кнопке
+</script>
